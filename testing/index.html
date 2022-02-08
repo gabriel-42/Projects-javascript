@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindromes</title>
+  </head>
+  <body>
+    <div>
+      <label for="name">Write a palindrome and see what happens:</label>
+      <input type="text" name="name" id="name" required />
+      <button id="enterBtn" onclick="caller()">Enter</button>
+      <button onclick="resetInput()">Reset</button>
+    </div>
+    <div>
+      <p id="showPalindrome"></p>
+      <p id="showReverse"></p>
+      <p id="showUppercase"></p>
+      <p id="showLowercase"></p>
+      <p id="hash"></p>
+      <button id="copyHashBtn" onclick="copyHash()">Copy</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
