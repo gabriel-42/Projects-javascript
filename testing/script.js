@@ -17,8 +17,10 @@ function reverseWord() {
 //if palindrome
 function palindrome() {
   let reverse_str = reverseWord(input.value)
+  let image = ''
   if (reverse_str === input.value) {
     showPalindrome.innerHTML = 'Yes'
+    image = '../images/cat-anime.jpg'
   } else {
     showPalindrome.innerHTML = 'No'
   }

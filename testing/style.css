@@ -1,25 +1,32 @@
 body {
-  background-color: green;
   font-family: helvetica, sans-serif;
+  background-size: cover;
 }
-#wrap {
-  background-color: aqua;
+#wrapper {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.formSection {
   text-align: center;
-  margin: auto;
 }
 #form {
-  background-color: red;
-  padding: 120px 100px 100px 100px;
+  padding: 100px;
   margin: 0px;
 }
-#paragraphsContainer {
-  background-color: violet;
+.hash {
+  height: 120px;
+}
+#toGenerateHash {
+  height: 15px;
+}
+#copyHashBtn {
+  margin-top: 10px;
+}
+.paragraphsContainer {
   display: flex;
+  text-align: center;
 }
 .paragraphs {
   flex: 1;
-  border: 1px solid black;
-  padding: 50px;
-}
-.paragraphs:first-child {
+  padding: 15px 20px 50px 20px;
+  height: 80px;
 }

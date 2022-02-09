@@ -8,7 +8,8 @@
     <title>Palindromes</title>
   </head>
   <body>
-    <div id="wrap">
+    <main id="wrapper">
+    <section class="formSection">
       <div id="form">
         <h1>
           Write a palindrome <br />
@@ -19,7 +20,13 @@
         <button id="enterBtn" onclick="caller()">Enter</button>
         <button onclick="resetInput()">Reset</button>
       </div>
-      <div id="paragraphsContainer">
+      <div class="hash">
+        <h2>The Hash to your word is:</h2>
+        <p id="toGenerateHash">hashhhhhhhhhhhhhhhhh</p>
+        <button id="copyHashBtn" onclick="copyHash()">Copy</button>
+      </div>
+    </section>
+    <section class="paragraphsContainer">
         <div class="paragraphs Palindrome">
           <h2>Is it a Palindrome?</h2>
           <p id="showPalindrome"></p>
@@ -36,13 +43,9 @@
           <h2>Lowercase</h2>
           <p id="showLowercase"></p>
         </div>
-        <div class="hash">
-          <h2>The Hash to your word is:</h2>
-          <p id="toGenerateHash"></p>
-          <button id="copyHashBtn" onclick="copyHash()">Copy</button>
-        </div>
       </div>
-    </div>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
