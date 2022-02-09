@@ -1,0 +1,25 @@
+body {
+  background-color: green;
+  font-family: helvetica, sans-serif;
+}
+#wrap {
+  background-color: aqua;
+  text-align: center;
+  margin: auto;
+}
+#form {
+  background-color: red;
+  padding: 120px 100px 100px 100px;
+  margin: 0px;
+}
+#paragraphsContainer {
+  background-color: violet;
+  display: flex;
+}
+.paragraphs {
+  flex: 1;
+  border: 1px solid black;
+  padding: 50px;
+}
+.paragraphs:first-child {
+}

@@ -4,22 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Palindromes</title>
   </head>
   <body>
-    <div>
-      <label for="name">Write a palindrome and see what happens:</label>
-      <input type="text" name="name" id="name" required />
-      <button id="enterBtn" onclick="caller()">Enter</button>
-      <button onclick="resetInput()">Reset</button>
-    </div>
-    <div>
-      <p id="showPalindrome"></p>
-      <p id="showReverse"></p>
-      <p id="showUppercase"></p>
-      <p id="showLowercase"></p>
-      <p id="hash"></p>
-      <button id="copyHashBtn" onclick="copyHash()">Copy</button>
+    <div id="wrap">
+      <div id="form">
+        <h1>
+          Write a palindrome <br />
+          See what happens!
+        </h1>
+        <label for="name"></label>
+        <input type="text" name="name" id="name" required />
+        <button id="enterBtn" onclick="caller()">Enter</button>
+        <button onclick="resetInput()">Reset</button>
+      </div>
+      <div id="paragraphsContainer">
+        <div class="paragraphs Palindrome">
+          <h2>Is it a Palindrome?</h2>
+          <p id="showPalindrome"></p>
+        </div>
+        <div class="paragraphs Reversed">
+          <h2>Reversed</h2>
+          <p id="showReverse"></p>
+        </div>
+        <div class="paragraphs Uppercase">
+          <h2>Uppercase</h2>
+          <p id="showUppercase"></p>
+        </div>
+        <div class="paragraphs Lowercase">
+          <h2>Lowercase</h2>
+          <p id="showLowercase"></p>
+        </div>
+        <div class="hash">
+          <h2>The Hash to your word is:</h2>
+          <p id="toGenerateHash"></p>
+          <button id="copyHashBtn" onclick="copyHash()">Copy</button>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

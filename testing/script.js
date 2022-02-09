@@ -18,9 +18,9 @@ function reverseWord() {
 function palindrome() {
   let reverse_str = reverseWord(input.value)
   if (reverse_str === input.value) {
-    showPalindrome.innerHTML = 1
+    showPalindrome.innerHTML = 'Yes'
   } else {
-    showPalindrome.innerHTML = 'This word is not a palindrome!'
+    showPalindrome.innerHTML = 'No'
   }
 }
 
