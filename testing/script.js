@@ -1,7 +1,13 @@
-/* ------------------------------TASK------------------------------
+/* - a pessoa vai digitar num campo e quando apertar enter, vai acontecer isso:
+ vai entregar o que ela digitou embaixo de tres formas: 
+-> a palavra inversa, escrita ao contrario
+-> em uppercase e lowercase
 -> e em hash pode ser md5 
--> se palindromo, mostrar imagem aleatória
- */
+
+só que antes disso, teu programa tem q detectar se é um palindromo 
+se for, nao é pra exibir nada, ao inves disso é pra exibir uma imagem qualquer 
+
+e tem q ter botao de limpar tudo, vai limpar as coisa e vai limpar o campo */
 var input = document.getElementById('name')
 //palavra inversa
 function reverseWord() {
@@ -17,12 +23,12 @@ function reverseWord() {
 //if palindrome
 function palindrome() {
   let reverse_str = reverseWord(input.value)
-  let image = ''
+  let catImage = document.getElementById('cat-image')
+  let displayImage = catImage.style.display
   if (reverse_str === input.value) {
-    showPalindrome.innerHTML = 'Yes'
-    image = '../images/cat-anime.jpg'
+    catImage.style.display = 'block'
   } else {
-    showPalindrome.innerHTML = 'No'
+    alert('This word is not a palindrome!')
   }
 }
 
@@ -43,8 +49,9 @@ function copyHash() {}
 
 //function to reset what's written inside input and Enter with keyboard
 function resetInput() {
-  input.value = ''
+  window.location.reload()
 }
+
 document.addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
     let btn = document.getElementById('enterBtn')

@@ -9,6 +9,7 @@
   </head>
   <body>
     <main id="wrapper">
+    <img src="../images/cat-anime.jpg" alt="" id="cat-image" >
     <section class="formSection">
       <div id="form">
         <h1>
@@ -16,9 +17,9 @@
           See what happens!
         </h1>
         <label for="name"></label>
-        <input type="text" name="name" id="name" required />
+        <input type="text" name="name" id="name" required autofocus/>
         <button id="enterBtn" onclick="caller()">Enter</button>
-        <button onclick="resetInput()">Reset</button>
+        <button id="resetBtn" onclick="resetInput()">Reset</button>
       </div>
       <div class="hash">
         <h2>The Hash to your word is:</h2>
@@ -27,10 +28,6 @@
       </div>
     </section>
     <section class="paragraphsContainer">
-        <div class="paragraphs Palindrome">
-          <h2>Is it a Palindrome?</h2>
-          <p id="showPalindrome"></p>
-        </div>
         <div class="paragraphs Reversed">
           <h2>Reversed</h2>
           <p id="showReverse"></p>
@@ -46,6 +43,9 @@
       </div>
       </section>
     </main>
+    <footer>
+     Lorem ipsum &copy;
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

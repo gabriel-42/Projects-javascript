@@ -1,19 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 body {
-  font-family: helvetica, sans-serif;
+  font-family: Indie Flower, cursive;
   background-size: cover;
+  margin: 0;
 }
 #wrapper {
   background-color: rgba(255, 255, 255, 0.4);
+  margin: 0;
 }
 .formSection {
   text-align: center;
 }
 #form {
   padding: 100px;
-  margin: 0px;
+  margin: 0;
+}
+#enterBtn,
+#resetBtn,
+#name {
+  display: block;
+  margin: 0;
 }
 .hash {
   height: 120px;
+}
+.hash h2 {
+  text-decoration: underline;
 }
 #toGenerateHash {
   height: 15px;
@@ -29,4 +41,24 @@ body {
   flex: 1;
   padding: 15px 20px 50px 20px;
   height: 80px;
+}
+.paragraphs h2 {
+  text-decoration: underline;
+}
+.paragraphs p {
+  font-weight: bold;
+}
+footer {
+  padding: 30px;
+  background-color: #042326;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.4);
+}
+
+.imageDiv {
+  background-image: url(../images/cat-anime.jpg);
+  display: none;
 }
