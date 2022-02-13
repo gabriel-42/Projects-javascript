@@ -3,22 +3,18 @@ body {
   font-family: Indie Flower, cursive;
   background-size: cover;
   margin: 0;
+  color: #1b1026;
+  background-image: url('../images/cat-anime.jpg');
 }
 #wrapper {
   background-color: rgba(255, 255, 255, 0.4);
-  margin: 0;
+  margin: 20px 100px;
 }
 .formSection {
   text-align: center;
 }
 #form {
-  padding: 100px;
-  margin: 0;
-}
-#enterBtn,
-#resetBtn,
-#name {
-  display: block;
+  padding: 50px;
   margin: 0;
 }
 .hash {
@@ -29,9 +25,6 @@ body {
 }
 #toGenerateHash {
   height: 15px;
-}
-#copyHashBtn {
-  margin-top: 10px;
 }
 .paragraphsContainer {
   display: flex;
@@ -48,17 +41,31 @@ body {
 .paragraphs p {
   font-weight: bold;
 }
+#copyHashBtn,
+#enterBtn,
+#resetBtn {
+  background-color: #f2d785;
+  color: #a62d12;
+  font-weight: bold;
+  font-family: indie flower, cursive;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 70px;
+  height: 30px;
+  margin-top: 10px;
+  display: block;
+}
+
 footer {
   padding: 30px;
-  background-color: #042326;
-  color: #fff;
+  background-color: #1b1026;
+  color: #f2d785;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.4);
+  text-shadow: 2px 2px 8px rgba(242, 178, 121, 0.4);
 }
 
-.imageDiv {
-  background-image: url(../images/cat-anime.jpg);
+#cat-image {
   display: none;
 }
