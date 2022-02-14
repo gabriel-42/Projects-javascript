@@ -1,46 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 body {
   font-family: Indie Flower, cursive;
-  background-size: cover;
+  font-weight: bold;
+  font-size: 20px;
   margin: 0;
   color: #1b1026;
-  background-image: url('../images/cat-anime.jpg');
+  position: relative;
 }
-#wrapper {
-  background-color: rgba(255, 255, 255, 0.4);
-  margin: 20px 100px;
+h2 {
+  text-decoration: underline;
+  font-size: 30px;
 }
-.formSection {
-  text-align: center;
+.wrapper {
+  margin: 20px 80px;
 }
-#form {
-  padding: 50px;
-  margin: 0;
+.form {
+  padding: 20px;
 }
 .hash {
-  height: 120px;
+  margin: 50px 0 50px 0;
 }
-.hash h2 {
-  text-decoration: underline;
+.toGenerateHash {
+  padding: 10px;
 }
-#toGenerateHash {
-  height: 15px;
+.formContainer {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 1150px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .paragraphsContainer {
+  position: absolute;
+  top: 449px;
+  left: 100px;
+  width: 1150px;
+  background-color: rgba(255, 255, 255, 0.4);
   display: flex;
   text-align: center;
 }
 .paragraphs {
   flex: 1;
   padding: 15px 20px 50px 20px;
-  height: 80px;
+  height: 90px;
 }
-.paragraphs h2 {
-  text-decoration: underline;
-}
-.paragraphs p {
-  font-weight: bold;
-}
+
 #copyHashBtn,
 #enterBtn,
 #resetBtn {
@@ -54,18 +59,33 @@ body {
   height: 30px;
   margin-top: 10px;
   display: block;
+  position: absolute;
 }
 
+#copyHashBtn,
+#enterBtn,
+#resetBtn:hover {
+  cursor: pointer;
+}
+#enterBtn {
+  left: 490px;
+}
+#resetBtn {
+  left: 590px;
+}
+#copyHashBtn {
+  left: 540px;
+  top: 380px;
+}
 footer {
-  padding: 30px;
+  padding: 40px;
   background-color: #1b1026;
   color: #f2d785;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(242, 178, 121, 0.4);
-}
-
-#cat-image {
-  display: none;
+  position: absolute;
+  top: 680px;
+  width: 1269px;
 }

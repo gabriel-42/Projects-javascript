@@ -9,6 +9,7 @@ se for, nao é pra exibir nada, ao inves disso é pra exibir uma imagem qualquer
 
 e tem q ter botao de limpar tudo, vai limpar as coisa e vai limpar o campo */
 var input = document.getElementById('name')
+var hash = md5('value')
 //palavra inversa
 function reverseWord() {
   let word = input.value

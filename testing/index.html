@@ -8,10 +8,10 @@
     <title>Palindromes</title>
   </head>
   <body>
-    <main id="wrapper">
-    <img src="../images/cat-anime.jpg" alt="" id="cat-image" >
-    <section class="formSection">
-      <div id="form">
+    <img src="../images/cat-anime.jpg" alt="" id="cat-image" style="width:100%; display:none" >
+    <main class="wrapper">
+    <div class="formContainer">
+      <div class="form">
         <h1>
           Write a palindrome <br />
           See what happens!
@@ -23,11 +23,11 @@
       </div>
       <div class="hash">
         <h2>The Hash to your word is:</h2>
-        <p id="toGenerateHash">hashhhhhhhhhhhhhhhhh</p>
+        <p class="toGenerateHash"></p>
         <button id="copyHashBtn" onclick="copyHash()">Copy</button>
       </div>
-    </section>
-    <section class="paragraphsContainer">
+    </div>
+    <div class="paragraphsContainer">
         <div class="paragraphs Reversed">
           <h2>Reversed</h2>
           <p id="showReverse"></p>
@@ -41,11 +41,12 @@
           <p id="showLowercase"></p>
         </div>
       </div>
-      </section>
+    </div>
     </main>
     <footer>
-     Lorem ipsum &copy;
-    </footer>
+      Lorem ipsum &copy;
+     </footer>
     <script src="script.js"></script>
+    <script src="js/md5.min.js"></script>
   </body>
 </html>
